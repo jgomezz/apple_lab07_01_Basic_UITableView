@@ -17,13 +17,24 @@ class ContactListViewController: UIViewController,
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Contact List"
+        //title = "Contact List"
 
         // Set delegates
         tableView.dataSource = self
         tableView.delegate = self
+        
+        // Set row height
+        tableView.rowHeight = 74
     }
 
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "My Contacts"
+    }
+    
     // MARK: - UITableViewDataSource
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,12 +43,13 @@ class ContactListViewController: UIViewController,
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ContactCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ContactCell", for: indexPath) as! CustomContactCell
         
         let contact = contacts[indexPath.row]
-        cell.textLabel?.text = contact.name
-        cell.detailTextLabel?.text = contact.phoneNumber
-        
+        // cell.textLabel?.text = contact.name
+        // cell.detailTextLabel?.text = contact.phoneNumber
+        cell.configure(with: contact)
+
         return cell
     }
     
