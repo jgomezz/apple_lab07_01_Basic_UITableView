@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3HX-ml-EqQ">
-                                <rect key="frame" x="39" y="0.0" width="393" height="818"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3HX-ml-EqQ">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ContactCell" rowHeight="64" id="8kh-Pw-gtG" customClass="CustomContactCell" customModule="apple_lab07_01_Basic_UITableView" customModuleProvider="target">
@@ -85,12 +85,16 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3HX-ml-EqQ" secondAttribute="bottom" id="VQ1-cA-z5N"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3HX-ml-EqQ" secondAttribute="bottom" id="YDY-GM-NwI"/>
                             <constraint firstItem="3HX-ml-EqQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YvF-8M-d4x"/>
+                            <constraint firstAttribute="trailing" secondItem="3HX-ml-EqQ" secondAttribute="trailing" id="aW8-4Z-QDA"/>
                             <constraint firstItem="3HX-ml-EqQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bgI-Ba-pgz"/>
                             <constraint firstItem="3HX-ml-EqQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bgU-JM-Cji"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3HX-ml-EqQ" secondAttribute="trailing" id="eec-7d-sW3"/>
+                            <constraint firstItem="3HX-ml-EqQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jy8-dG-UBp"/>
+                            <constraint firstItem="3HX-ml-EqQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="r7U-ah-adg"/>
                             <constraint firstItem="3HX-ml-EqQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="u4Y-Ct-Ac2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3HX-ml-EqQ" secondAttribute="trailing" id="vkJ-MF-Dhi"/>
                             <constraint firstItem="3HX-ml-EqQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wq0-IB-Csy"/>
+                            <constraint firstItem="3HX-ml-EqQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="z71-Xn-l5H"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wiT-LY-24a"/>
@@ -126,10 +130,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
